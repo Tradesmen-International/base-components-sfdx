@@ -2,10 +2,13 @@
     "packageDirectories": [
         {
             "path": "src/modules/base",
-            "default": true
+            "default": true,
+            "package": "avonni",
+            "versionName": "Version 1.0",
+            "versionNumber": "1.0.0.NEXT"
         }
     ],
-    "namespace": "",
+    "namespace": "tiav",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "50.0"
 }
