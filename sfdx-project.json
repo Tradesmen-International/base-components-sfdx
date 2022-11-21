@@ -12,6 +12,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "50.0",
     "packageAliases": {
-        "avonni": "0Ho8X000000PAsISAW"
+        "avonni": "0Ho8X000000PAsISAW",
+        "avonni@1.0.0-3": "04t8X000000MmKuQAK"
     }
 }
