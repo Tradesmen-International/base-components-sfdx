@@ -26,11 +26,13 @@ Because Avonni does not bundle their code for packaging, this repo takes some ma
 
 1. Verify all `**/lwc/avonni**/*.xml` have `isExposed` set to `true`.
 1. Create new Version
-    * `sfdx force:package:version:create --wait 10 --package avonni --installationkeybypass`
+    * `sfdx force:package:version:create --wait 10 --package avonni --installationkeybypass --codecoverage`
+    * `--codecoverage` is required to promote to a released package, but can be omitted to iterate during dev.
 1. Get the Subscriber Package Version ID
     * Starts with `04t`
     * Reported output of force:package:version:create
     * Can also be retrieved later using `sfdx force:package:version:list`
 1. Install new Version to Salesforce Sandbox/Prod
     * Using the Subscriber Package Version Id (Starts with `04t`).
+    * `sfdx force:package:version:promote --package <04t>
     * `sfdx force:package:install --wait 10 --package <04t...> --username <username of sf target>`
